@@ -12,7 +12,7 @@ import {
   Image
 } from 'react-native';
 
-import { Container, Content, Header, Left, Body, Right, Button, Icon, Title, Text, Item, Input, FooterTab} from 'native-base';
+import { Container, Content, Header, Left, Body, Right, Button, Icon, Title, Text, Item, Input, FooterTab, Footer} from 'native-base';
 
 export default class App extends Component {
   render() {
@@ -45,7 +45,7 @@ export default class App extends Component {
           </View>
 
           <View style={styles.backTwo}>
-            <Image source={require('./img/Rn.png')} style={{width:120, height:120}} />
+            <Image source={require('./img/1.png')} style={{width:120, height:120}} />
           </View>
 
           <View style={styles.backThree}>
@@ -53,7 +53,7 @@ export default class App extends Component {
           </View>
 
           <View style={styles.backFour}>
-            <Text>Squad Maba</Text>
+            <Text>Lamborghini</Text>
           </View>
 
           <FooterTab style={styles.menuOne}>
@@ -118,16 +118,36 @@ export default class App extends Component {
               </Right>
             </Item>
             <Item style={{marginBottom:5}}>
-              <Image source={require('./img/lamb.jpg')} style={{width:180, height:150, marginRight:5}} />
-              <Image source={require('./img/lamb.jpg')} style={{width:180, height:150}} />
+              <Image source={require('./img/2.jpg')} style={{width:180, height:150, marginRight:5}} />
+              <Image source={require('./img/3.jpg')} style={{width:180, height:150}} />
             </Item>
             <Item>
-              <Image source={require('./img/lamb.jpg')} style={{width:115, height:120, marginRight:5}} />
-              <Image source={require('./img/lamb.jpg')} style={{width:115, height:120, marginRight:5}} />
-              <Image source={require('./img/lamb.jpg')} style={{width:115, height:120}} />
+              <Image source={require('./img/4.jpg')} style={{width:115, height:120, marginRight:5}} />
+              <Image source={require('./img/5.jpg')} style={{width:115, height:120, marginRight:5}} />
+              <Image source={require('./img/6.jpg')} style={{width:115, height:120}} />
             </Item>
           </View>
         </Content>
+
+        <Footer>
+          <FooterTab style={styles.menuTwo}>
+            <Button vertical style={{padding:2}}>
+              <Icon name="ios-paper" />
+            </Button>
+            <Button vertical>
+              <Icon name="ios-people" />
+            </Button>
+            <Button vertical>
+              <Icon active name="ios-chatboxes" />
+            </Button>
+            <Button vertical>
+              <Icon name="globe" />
+            </Button>
+            <Button vertical>
+              <Icon name="ios-list" />
+            </Button>
+          </FooterTab>
+        </Footer>
       </Container>
     );
   }
@@ -169,14 +189,11 @@ const styles = StyleSheet.create({
     padding:5
   },
 
-  textOne:{
-    fontSize:8,
-    color:'black',
-    textAlign:'justify'
-  },
-
   menuOne:{
     backgroundColor:'white',
+  },
+  menuTwo:{
+    backgroundColor:'#6A1B9A',
   },
 });
 
